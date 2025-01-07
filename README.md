@@ -10,9 +10,11 @@ As an person who has an avid interest in classic novels, I'm always on the hunt 
 - Beautiful Soup
 - Requests
 
-- ## Requirements for Web-Scraper Selenium
+## Requirements for Web-Scraper Selenium
 - Python 3.x
 - Selenium
 - ChromeDriver
 
+## Remarks ##
+The number of pages to scrape is adjustable for both web-scraping programs. However, since the number of ratings on OpenLibrary drop significantly after page 10, I set a default of 10 pages as scraping beyond that yields very similar results.
 
