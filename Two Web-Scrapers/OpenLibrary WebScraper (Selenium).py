@@ -16,15 +16,7 @@ chrome_options.add_argument("--no-sandbox")
 
 # Start browser and open webpage into classic novels section
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-driver.get('https://openlibrary.org/subjects/accessible_book#ebooks=true')
-
-#Enter the whole book archive
-print('Opening 1457 works')
-all_books_link = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.LINK_TEXT, "1457 works"))
-)
-all_books_link.click()
-print('In the book list')
+driver.get('https://openlibrary.org/search?subject=Accessible%20book')
 
 #Function that extracts relevant information
 def extract_books_on_page(driver):
