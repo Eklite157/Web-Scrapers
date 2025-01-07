@@ -100,7 +100,7 @@ def extract_books_on_page(driver):
 all_books_of_interest = []
 
 #Number is adustable
-num_pages = 10
+num_pages = 9
 
 #Pagination
 for page_num in range(1, num_pages + 1):
