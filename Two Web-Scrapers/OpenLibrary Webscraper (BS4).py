@@ -11,7 +11,7 @@ book_data = []
 
 
 # Number of pages to scrape (number is adjustable)
-num_pages = 19
+num_pages = 9
 
 #Pagination
 for page_num in range(1, num_pages + 1):
