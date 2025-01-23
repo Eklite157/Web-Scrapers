@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS books(
 cursor.execute(create_bookdb_query)
 db_connection.commit()
 
-
+#Access the website
 base_url="https://openlibrary.org/search?subject=Accessible+book&page={}"
 
 # List to store book data
@@ -103,7 +103,7 @@ for page_num in range(1, num_pages + 1):
             if isinstance(rating_stars, float) and isinstance(rating_count, int):
                 if status and rating_stars >= 4.0 and rating_count>=100:
 
-                    #Execute SQL query to insert into MySQL database
+                    #Execute SQL query to insert data into the MySQL database
                     cursor.execute("""
                         INSERT INTO books (title, author, stars, rating_count, availability)
                         VALUES (%s, %s, %s, %s, %s)
