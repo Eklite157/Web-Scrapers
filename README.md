@@ -9,6 +9,8 @@ As an person who has an avid interest in classic novels, I'm always on the hunt 
 - Python 3.x
 - Beautiful Soup
 - Requests
+- MySQL
+Please note that inserting the scraped data into MySQL uses environment variables that store your MySQL username and password, which would need to be configured on your local device.
 
 ## Requirements for Web-Scraper Selenium
 - Python 3.x
